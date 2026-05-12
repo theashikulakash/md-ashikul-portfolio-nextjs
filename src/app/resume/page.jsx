@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaFacebook, FaMapMarkerAlt, FaDownload } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaFacebook, FaLink, FaMapMarkerAlt, FaDownload } from 'react-icons/fa';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 
@@ -40,12 +40,12 @@ const ResumePage = () => {
       {/* Header / Contact Info */}
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
         <div>
-          <h1 className="text-5xl font-bold text-white mb-2 tracking-tighter">Md Ashikul Islam Akash [cite: 1]</h1>
-          <p className="text-xl text-blue-400 font-mono mb-4">Full Stack Engineer | CSE Graduate [cite: 16, 56]</p>
+          <h1 className="text-5xl font-bold text-white mb-2 tracking-tighter">Md Ashikul Islam Akash</h1>
+          <p className="text-xl text-blue-400 font-mono mb-4">Web Developer | CSE Graduate</p>
           <div className="flex flex-wrap gap-4 text-sm text-gray-400">
-            <span className="flex items-center gap-2"><FaPhone className="text-blue-400"/> 01737916060 [cite: 7]</span>
-            <span className="flex items-center gap-2"><FaEnvelope className="text-blue-400"/> akashashikul@gmail.com [cite: 8]</span>
-            <span className="flex items-center gap-2"><FaMapMarkerAlt className="text-blue-400"/> Jashore, Bangladesh [cite: 3, 6]</span>
+            <span className="flex items-center gap-2"><FaPhone className="text-blue-400"/> 01737916060</span>
+            <span className="flex items-center gap-2"><FaEnvelope className="text-blue-400"/> akashashikul@gmail.com</span>
+            <span className="flex items-center gap-2"><FaMapMarkerAlt className="text-blue-400"/> Jashore, Bangladesh</span>
           </div>
         </div>
         <button className="btn btn-outline border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white rounded-full px-8">
@@ -56,11 +56,11 @@ const ResumePage = () => {
       {/* Summary */}
       <section className="mb-16">
         <SectionTitle>Career Summary</SectionTitle>
-        <p className="text-gray-400 leading-relaxed max-w-4xl bg-gray-800/30 p-6 rounded-2xl border border-gray-800">
-          CSE graduate and aspiring Web Developer with a strong eye for design[cite: 16]. 
+        <p className="text-gray-400 leading-relaxed  bg-gray-800/30 p-6 rounded-2xl border border-gray-800">
+          CSE graduate and aspiring Web Developer with a strong eye for design. 
           Combining 5 years of creative experience with technical expertise in HTML, CSS, and JS 
-          to build responsive, user-friendly websites[cite: 17]. Eager to grow with a tech team 
-          and leverage a background in Graphic Design and Marketing[cite: 14, 18].
+          to build responsive, user-friendly websites. Eager to grow with a tech team 
+          and leverage a background in Graphic Design and Marketing.
         </p>
       </section>
 
@@ -119,13 +119,38 @@ const ResumePage = () => {
         </div>
       </section>
 
+      {/* Training & Courses */}
+      <section className="mb-16">
+        <SectionTitle>Training & Courses</SectionTitle>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ResumeCard 
+            title="Web Development Level-1"
+            subtitle="Programming Hero"
+            date="On Going"
+            result="--"
+          />
+          <ResumeCard 
+            title="Basic to Advance Excel"
+            subtitle="Skillful Bangladesh"
+            date="2016"
+            result="Expert"
+          />
+          <ResumeCard 
+            title="English Speaking"
+            subtitle="S@ifurs Bangladesh"
+            date="2017"
+            result="C1"
+          />
+        </div>
+      </section>
+
       {/* Skills Grid */}
       <section className="mb-16">
         <SectionTitle>Key Expertise</SectionTitle>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            "JavaScript", "Next.js", "React", "Node.js", "MongoDB", 
-            "Tailwind CSS", "DaisyUI", "SEO", "Graphic Design", "Data Entry"
+            "JavaScript", "Next.js", "React", "Node.js", "MongoDB", "Better-Auth", "Github", "Vercel", "Netlify", "REST API", 
+            "Tailwind CSS", "DaisyUI", "SEO", "Graphic Design", "Data Entry", "Linux"
           ].map(skill => (
             <div key={skill} className="bg-gray-800/30 border border-gray-800 p-4 rounded-xl text-center text-gray-300 font-medium">
               {skill}
@@ -137,16 +162,21 @@ const ResumePage = () => {
       {/* References */}
       <section className="mb-16">
         <SectionTitle>References</SectionTitle>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="p-6 rounded-2xl border border-gray-800 bg-[#0d1117]/50">
-            <h4 className="text-white font-bold text-lg">Raja Tariqul Hasan Tusher [cite: 86]</h4>
-            <p className="text-gray-400 text-sm">Assistant Lecturer, DIU [cite: 87, 88]</p>
-            <p className="text-blue-400 text-xs mt-2">tusher.cse@diu.edu.bd [cite: 93]</p>
+            <h4 className="text-white font-bold text-lg">Raja Tariqul Hasan Tusher</h4>
+            <p className="text-gray-400 text-sm">Assistant Lecturer, DIU</p>
+            <p><a href="mailto:tusher.cse@diu.edu.bd" className="text-blue-400 text-xs mt-2">tusher.cse@diu.edu.bd</a></p>
           </div>
           <div className="p-6 rounded-2xl border border-gray-800 bg-[#0d1117]/50">
-            <h4 className="text-white font-bold text-lg">Hashanul Banna [cite: 103]</h4>
-            <p className="text-gray-400 text-sm">Owner, Arivid International Co. [cite: 104, 106]</p>
-            <p className="text-blue-400 text-xs mt-2">admin@arivid.com [cite: 110]</p>
+            <h4 className="text-white font-bold text-lg">Hashanul Banna</h4>
+            <p className="text-gray-400 text-sm">Owner, Arivid International Co.</p>
+            <p><a href="mailto:admin@arivid.com" className="text-blue-400 text-xs mt-2">admin@arivid.com</a></p>
+          </div>
+          <div className="p-6 rounded-2xl border border-gray-800 bg-[#0d1117]/50">
+            <h4 className="text-white font-bold text-lg">KH Mohsin Karim</h4>
+            <p className="text-gray-400 text-sm">Founder, Quality Food Servicec</p>
+            <p><a href="mailto:qualitygroujsr@gmail.com" className="text-blue-400 text-xs mt-2">qualitygroujsr@gmail.com</a></p>
           </div>
         </div>
       </section>

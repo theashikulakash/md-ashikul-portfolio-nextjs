@@ -7,8 +7,9 @@ const Footer = () => {
         <footer className="border-t border-white/10 bg-gray-800/30 py-8 text-center text-sm text-slate-400">
             <div className="p-6 mt-4">
                 <button className="btn glass rounded-full border-white/20 bg-white/5 mb-3 text-white hover:bg-white/10 hover:border-white/40 transition-all duration-300">
-  Explore Projects
-</button>
+                    Get in touch
+
+                </button>
                 <p>What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
                 </p>
 
@@ -28,22 +29,22 @@ const Footer = () => {
                     You may also find me on these platforms!
                 </p>
                 <div className="flex flex-row gap-3 mt-3 items-center justify-center text-center">
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="https://github.com/theashikulakash" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <FaGithub className="h-5 w-5" />
                     </a>
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="https://www.linkedin.com/in/theashikulakash" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <FaLinkedin className="h-5 w-5" />
                     </a>
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="https://theashikulakash.medium.com" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <FaMedium className="h-5 w-5" />
                     </a>
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="/blog" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <FaBlog className="h-5 w-5" />
                     </a>
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="https://x.com/theashikulakash" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <FaXTwitter className="h-5 w-5" />
                     </a>
-                    <a href="#" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
+                    <a href="https://leetcode.com/u/theashikulakash/" className="rounded-full glass bg-white/10 p-3 text-white transition hover:bg-white/20">
                         <SiLeetcode className="h-5 w-5" />
                     </a>
                 </div>
