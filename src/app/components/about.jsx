@@ -12,7 +12,7 @@
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="rounded-3xl bg-gray-800/30 p-5">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Location</p>
-          <p className="mt-3 text-lg font-semibold text-white">Dhaka, Bangladesh</p>
+          <p className="mt-3 text-lg font-semibold text-white">Jessore, Bangladesh</p>
         </div>
         <div className="rounded-3xl bg-gray-800/30 p-5">
           <p className="text-sm uppercase tracking-[0.35em] text-slate-400">Specialty</p>

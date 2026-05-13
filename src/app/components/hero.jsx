@@ -1,13 +1,18 @@
-﻿const Hero = () => {
+﻿
+
+const Hero = () => {
     return (
         <section className="space-y-6 rounded-3xl  p-8 shadow-2xl shadow-slate-950/30 flex md:flex-row justify-center
         mx-auto max-w-10/12 space-y-10 flex-col-reverse px-4 py-10 sm:px-6 lg:px-8 ">
             {/* section class-- border border-white/10 bg-slate-900/80 */}
             <div className="sm:w-10/12 md:w-6/12 flex flex-col text-justify justify-center gap-3 mx-auto">
+                <p className="text-sky-300 text-xl">Hi I'm,</p>
                 <h1 className="text-4xl  text-justify font-bold tracking-tight text-white sm:text-5xl">
                     Md Ashikul Islam
                 </h1>
-                <p className="text-sm  mb-4 uppercase tracking-[0.4em] text-cyan-300">Welcome to my portfolio</p>
+                <p>
+                    <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=3000&color=7dd3fc&left=true&vCenter=true&width=800&lines=Full+Stack+Web+Developer;MERN+Stack+Specialist;Building+Scalable+Web+Applications" />
+                </p>
 
                 <p className="max-w-2xl text-lg leading-8 text-slate-300">
                     I am a frontend engineer focused on clean code, elegant UI, and fast performance.
@@ -32,7 +37,7 @@
                 <img src="/hero.png" alt="" />
             </div>
 
-        </section>
+        </section >
     );
 };
 

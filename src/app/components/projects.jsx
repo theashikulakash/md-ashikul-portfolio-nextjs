@@ -1,4 +1,4 @@
-﻿import { FaLink } from "react-icons/fa6";
+﻿import { FaGithub, FaLink } from "react-icons/fa6";
 
 const Projects = () => {
     const projects = [
@@ -6,68 +6,86 @@ const Projects = () => {
             id: "1",
             title: "Object Detection YOLO V3",
             description: "TensorFlow-2.x-YOLOv3 & Yolo V-3 Tiny for University Final Year Project",
-            link: "404"
+            githublink: "https://github.com/theashikulakash/TensorFlow-2.x-YOLOv3",
+            livelink: "404"
         },
         {
             id: "2",
             title: "2048 Game",
-            description: "Modern landing page with interactive sections and fast page loads.",
-            link: "https://2048-game-javascript.netlify.app"
+            description: "Merge tiles, reach 2048, and master the grid.",
+            githublink: "https://github.com/theashikulakash/2048-game-javascript",
+            livelink: "https://2048-game-javascript.netlify.app"
         },
         {
             id: "3",
             title: "Currency Converter",
             description: "Modern landing page with interactive sections and fast page loads.",
-            link: "https://currency-converter-java-script.netlify.app"
+            githublink: "https://github.com/theashikulakash/currency-converter-javascript",
+            livelink: "https://currency-converter-java-script.netlify.app"
         },
         {
             id: "4",
             title: "QFS E-commerce Website",
             description: "E-commerce website for Quality Food Service",
-            link: "https://qfsfoodservice.vercel.app"
+            githublink: "https://github.com/theashikulakash/qfsfoodservice",
+            livelink: "https://qfsfoodservice.vercel.app"
         },
         {
             id: "5",
             title: "E-commerce Peak-Summer",
             description: "E-commerce website for Peak-Summer",
-            link: "https://peak-summer.vercel.app"
+            githublink: "https://github.com/theashikulakash/summer-products-e-commerce",
+            livelink: "https://peak-summer.vercel.app"
         },
         {
             id: "6",
             title: "Issue Tracker",
             description: "Github Issue Tracking API Based web app",
-            link: "https://github-issue-tracker-herocoders.netlify.app"
+            githublink: "https://github.com/theashikulakash/github-issue-tracker",
+            livelink: "https://github-issue-tracker-herocoders.netlify.app"
         },
         {
             id: "7",
             title: "G3 Architecture UI",
-            description: "PH Assignment Project",
-            link: ""
+            description: "Responsive Modern landing page with interactive sections and fast page loads.",
+            githublink: "https://github.com/theashikulakash/G3-Architects-Responsive-LandingPage",
+            livelink: ""
         },
         {
             id: "8",
             title: "E-commerce UI for Digitools",
             description: "E-commerce UI for Digitools",
-            link: "https://digitools-a6-ph.netlify.app"
+            githublink: "https://github.com/theashikulakash/digitools-a6",
+            livelink: "https://digitools-a6-ph.netlify.app"
         },
         {
             id: "9",
             title: "Job Application Tracker",
             description: "Job Application Tracking web app",
-            link: "https://job-application-tracker-a4ph.netlify.app"
+            githublink: "https://github.com/theashikulakash/job-application-tracker",
+            livelink: "https://job-application-tracker-a4ph.netlify.app"
         },
         {
             id: "10",
             title: "Comunity Tracking Website",
             description: "Comunity Tracking Website with api",
-            link: "https://keen-keeper-ph-a7.netlify.app"
+            githublink: "https://github.com/theashikulakash/keen-keeper-a7",
+            livelink: "https://keen-keeper-ph-a7.netlify.app"
         },
+        // {
+        //     id: "11",
+        //     title: "To-Do Dashboard",
+        //     description: "Fully Customizable To-Do Dashboard",
+        //     githublink: "",
+        //     livelink: "https://to-do-s-theashikulakash.netlify.app"
+        // },
         {
-            id: "11",
-            title: "To-Do Dashboard",
-            description: "Fully Customizable To-Do Dashboard",
-            link: "https://to-do-s-theashikulakash.netlify.app"
-        },
+            id: "12",
+            title: "Language Translator JS",
+            description: "Translate text between different languages.",
+            githublink: "https://github.com/theashikulakash/lan-translator-html-css-js",
+            livelink: "https://theashikulakash.github.io/lan-translator-html-css-js"
+        }
     ];
 
     return (
@@ -82,9 +100,15 @@ const Projects = () => {
                         <article key={project.id} className="rounded-3xl border border-white/10 bg-gray-800/30 p-6">
                             <div className="flex flex-row justify-between">
                                 <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                                <a href={project.link} className="flex flex-row text-sky-300 justify-center items-center">
+                                <div className="flex flex-row gap-3 scale-105">
+                                    <a href={project.githublink} className="hover:text-gray-100 text-sky-300 justify-center items-center">
+                                    <FaGithub />
+                                </a>
+                                    <a href={project.livelink} className="hover:text-gray-100 text-sky-300 justify-center items-center">
                                     <FaLink />
                                 </a>
+                                </div>
+                                
                             </div>
                             <p className="mt-3 text-slate-300">{project.description}</p>
                         </article>
